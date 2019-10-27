@@ -21,10 +21,14 @@
         android:label="FirstQuestionFragment" >
         <action
             android:id="@+id/action_firstQuestionFragment_to_gameWinFragment"
-            app:destination="@id/gameWinFragment" />
+            app:destination="@id/gameWinFragment"
+            app:popUpTo="@+id/firstQuestionFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_firstQuestionFragment_to_gameLoseFragment2"
-            app:destination="@id/gameLoseFragment" />
+            app:destination="@id/gameLoseFragment"
+            app:popUpTo="@+id/firstQuestionFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/gameLoseFragment"
