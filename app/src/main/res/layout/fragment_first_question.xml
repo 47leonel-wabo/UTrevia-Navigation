@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".FirstQuestionFragment">
+
+        <ImageView
+            android:id="@+id/flower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/flower"
+            android:src="@drawable/ic_flower"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:textColor="@color/colorAfrica"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:text="@string/africa_strength"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_one"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginStart="@dimen/xtra_margin"
+            android:layout_marginEnd="@dimen/xtra_margin"
+            android:textAlignment="center"/>
+
+        <RadioGroup
+            android:id="@+id/ansRadioGroup"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/firstAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/animals_on_nature"/>
+            <RadioButton
+                android:id="@+id/secondAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/young_and_talented_people"/>
+            <RadioButton
+                android:id="@+id/thirdAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/natural_resources"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/moveNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/move_next"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_back"
+            android:layout_marginTop="@dimen/large_margin"/>
+
+    </LinearLayout>
+</layout>

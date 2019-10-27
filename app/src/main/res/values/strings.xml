@@ -7,4 +7,11 @@
     <string name="the_gold_continent">, The gold continent</string>
     <string name="intro_txt">Start navigating through African continent with navigation by android framework</string>
     <string name="let_start">Start</string>
+    <string name="flower">Flower</string>
+    <string name="africa_strength">Africa strength</string>
+    <string name="question_one">What is one of the most important strength of africa continent?</string>
+    <string name="animals_on_nature">Animals on nature</string>
+    <string name="young_and_talented_people">Young and talented people</string>
+    <string name="natural_resources">Natural resources</string>
+    <string name="move_next">Next</string>
 </resources>
