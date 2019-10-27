@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">UTrevia Navigation</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="africa_image">Africa image</string>
+    <string name="africa">Africa</string>
+    <string name="the_gold_continent">, The gold continent</string>
+    <string name="intro_txt">Start navigating through African continent with navigation by android framework</string>
+    <string name="let_start">Start</string>
 </resources>
