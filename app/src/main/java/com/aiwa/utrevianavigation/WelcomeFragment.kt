@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.aiwa.utrevianavigation.databinding.FragmentWelcomeBinding
 
 /**
@@ -26,8 +26,9 @@ class WelcomeFragment : Fragment() {
 
         //Performing action on the view
         welcomeBinding.startNavigate.setOnClickListener {
-            //Navigation.createNavigateOnClickListener(R.id.action_welcomeFragment_to_firstQuestionFragment)
-            Navigation.findNavController(it).navigate(R.id.action_welcomeFragment_to_firstQuestionFragment)
+
+            //alternative way//Navigation.findNavController(it).navigate(R.id.action_welcomeFragment_to_firstQuestionFragment)
+            it.findNavController().navigate(R.id.action_welcomeFragment_to_firstQuestionFragment)
         }
 
         return welcomeBinding.root

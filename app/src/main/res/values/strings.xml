@@ -14,4 +14,9 @@
     <string name="young_and_talented_people">Young and talented people</string>
     <string name="natural_resources">Natural resources</string>
     <string name="move_next">Next</string>
+    <string name="trophy_image">Trophy image</string>
+    <string name="puzzle_image">Puzzle image</string>
+    <string name="play_again">Play again</string>
+    <string name="win_congrat">You win!! \nCongratulation</string>
+    <string name="you_lose">You lose !</string>
 </resources>

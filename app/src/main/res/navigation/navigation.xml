@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
     app:startDestination="@id/welcomeFragment">
 
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.aiwa.utrevianavigation.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome"
         android:label="WelcomeFragment" >
         <action
             android:id="@+id/action_welcomeFragment_to_firstQuestionFragment"
@@ -14,5 +17,27 @@
     <fragment
         android:id="@+id/firstQuestionFragment"
         android:name="com.aiwa.utrevianavigation.FirstQuestionFragment"
-        android:label="FirstQuestionFragment" />
+        tools:layout="@layout/fragment_first_question"
+        android:label="FirstQuestionFragment" >
+        <action
+            android:id="@+id/action_firstQuestionFragment_to_gameWinFragment"
+            app:destination="@id/gameWinFragment" />
+        <action
+            android:id="@+id/action_firstQuestionFragment_to_gameLoseFragment2"
+            app:destination="@id/gameLoseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameLoseFragment"
+        tools:layout="@layout/fragment_game_lose"
+        android:name="com.aiwa.utrevianavigation.GameLoseFragment"
+        android:label="GameLoseFragment" >
+        <action
+            android:id="@+id/action_gameLoseFragment_to_firstQuestionFragment"
+            app:destination="@id/firstQuestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameWinFragment"
+        tools:layout="@layout/fragment_game_win"
+        android:name="com.aiwa.utrevianavigation.GameWinFragment"
+        android:label="GameWinFragment" />
 </navigation>
