@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
+import com.aiwa.utrevianavigation.databinding.FragmentWelcomeBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -17,9 +20,17 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        //Binding
+        val welcomeBinding:FragmentWelcomeBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome,
+            container, false)
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_welcome, container, false)
+        //Performing action on the view
+        welcomeBinding.startNavigate.setOnClickListener {
+            //Navigation.createNavigateOnClickListener(R.id.action_welcomeFragment_to_firstQuestionFragment)
+            Navigation.findNavController(it).navigate(R.id.action_welcomeFragment_to_firstQuestionFragment)
+        }
+
+        return welcomeBinding.root
     }
 
 
