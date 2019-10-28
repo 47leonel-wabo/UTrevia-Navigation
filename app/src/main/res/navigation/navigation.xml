@@ -44,4 +44,9 @@
         tools:layout="@layout/fragment_game_win"
         android:name="com.aiwa.utrevianavigation.GameWinFragment"
         android:label="GameWinFragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.aiwa.utrevianavigation.AboutFragment"
+        tools:layout="@layout/fragment_about"
+        android:label="AboutFragment" />
 </navigation>

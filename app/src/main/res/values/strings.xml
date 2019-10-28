@@ -19,4 +19,8 @@
     <string name="play_again">Play again</string>
     <string name="win_congrat">You win!! \nCongratulation</string>
     <string name="you_lose">You lose !</string>
+    <string name="adb">Android adb</string>
+    <string name="about_txt">About this</string>
+    <string name="about_msg">This is a gentle introduction to android navigation component, part Jetpack lib nothing more</string>
+    <string name="abt">About</string>
 </resources>
