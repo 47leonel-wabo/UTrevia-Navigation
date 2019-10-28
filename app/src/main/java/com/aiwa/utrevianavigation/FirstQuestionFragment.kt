@@ -37,9 +37,9 @@ class FirstQuestionFragment : Fragment() {
 
         firstQuestionBinding.moveNext.setOnClickListener {
             if (goodResp){
-                it.findNavController().navigate(R.id.action_firstQuestionFragment_to_gameWinFragment)
+                it.findNavController().navigate(FirstQuestionFragmentDirections.actionFirstQuestionFragmentToGameWinFragment())
             }else{
-                it.findNavController().navigate(R.id.action_firstQuestionFragment_to_gameLoseFragment2)
+                it.findNavController().navigate(FirstQuestionFragmentDirections.actionFirstQuestionFragmentToGameLoseFragment2())
             }
         }
 
